@@ -1,5 +1,6 @@
 import './style.css'
-import {data, eduProfile, skillEach, eventEach} from './src/js/eachingFunction'
+import data from './src/data.json'
+import {eduProfile, skillEach, eventEach} from './src/js/eachingFunction'
 
 let home = `<div class="w-[100%] h-screen flex flex-col justify-center text-center items-center" id="home">
   <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
@@ -19,7 +20,7 @@ let home = `<div class="w-[100%] h-screen flex flex-col justify-center text-cent
 </div>`
 
 let about = `<div class="w-[100%] h-screen flex flex-col justify-center text-center items-center" id="about">
-  <div class="w-[95%] min-h-[90vh] md:w-[95%] lg:w-[90%]">
+  <div class="aboutContainer w-[95%] h-[95vh] align-bottom md:w-[95%] lg:w-[90%]">
     <h1 class="text-3xl my-[1rem] text-[#f5f5f5]">
       <u>
         About me
@@ -97,6 +98,9 @@ let about = `<div class="w-[100%] h-screen flex flex-col justify-center text-cen
             </b>
           </h3>
           <hr class="border-solid border-gray-400 w-[5%]">
+          <div class="w-full h-auto flex flex-col flex-wrap mt-[1rem] justify-center md:flex-row">
+            ${eventEach(data.about.events)}
+          </div>
         </div>
       </div>
     </div>

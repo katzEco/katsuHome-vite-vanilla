@@ -23,6 +23,34 @@ a {
   transition: all .3s;
 }
 
-#about {
+#about .aboutContainer {
   overflow: auto;
+}
+
+.cardEvent {
+  width: 20rem;
+  background-color: #2e2f2f;
+  border-radius: 1rem;
+}
+
+.cardEvent img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.cardEvent .cardBody {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.cardEvent .cardBody h3 {
+  font-size: 20px;
+  padding: .5rem;
+}
+
+.cardEvent .cardBody p {
+  font-size: 15px;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  color: lightgray !important;
 }

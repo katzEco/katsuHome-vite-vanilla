@@ -1,6 +1,4 @@
-import data from '../data.json'
-
-function eduProfile(inp) {
+export function eduProfile(inp) {
   let temp = ''
   let log
   inp.forEach(iinp => {
@@ -20,7 +18,7 @@ function eduProfile(inp) {
   return temp;
 } 
 
-function skillEach(inp) {
+export function skillEach(inp) {
   let temp = ''
   
   inp.forEach(iinp => {
@@ -34,13 +32,28 @@ function skillEach(inp) {
   return temp;
 }
 
-function eventEach(inp) {
-  
-}
+export function eventEach(inp) {
+  let temp = ''
 
-module.exports = {
-  data,
-  eduProfile,
-  skillEach,
-  eventEach
+  inp.forEach(iinp => {
+    let cord = `<div class="cardEvent">
+  <img src="${iinp.image}" />
+  <div class="cardBody">
+    <h3>
+      ${iinp.name}
+    </h3>
+    <p>
+      ${iinp.desp}
+    </p>
+  </div>
+</div>`
+
+    if (temp != '') {
+      temp = temp + cord
+    } else {
+      temp = cord
+    }
+  })
+
+  return temp;
 }
