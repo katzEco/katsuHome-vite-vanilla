@@ -20,13 +20,13 @@ let home = `<div class="w-[100%] h-screen flex flex-col justify-center text-cent
 </div>`
 
 let about = `<div class="w-[100%] h-screen flex flex-col justify-center text-center items-center" id="about">
-  <div class="aboutContainer w-[95%] h-[95vh] align-bottom md:w-[95%] lg:w-[90%]">
-    <h1 class="text-3xl my-[1rem] text-[#f5f5f5]">
+  <div class="aboutContainer w-[95%] h-screen align-bottom md:w-[95%] lg:w-[90%]">
+    <h1 class="text-3xl my-[5rem] text-[#f5f5f5]">
       <u>
         About me
       </u>
     </h1>
-    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem]">
+    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
       <div class="basic text-[18px]">
         <h2 class="text-2xl">
           <b>
@@ -118,7 +118,12 @@ let about = `<div class="w-[100%] h-screen flex flex-col justify-center text-cen
         </div>
       </div>
     </div>
-  </div>      
+
+    <nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
+      <a href="/" class="block w-full duration-300 hover:opacity-80">&lt; Home</a>
+      <a href="#commission" class="block w-full duration-300 hover:opacity-80">Commission &gt;</a>
+    </nav>
+  </div>
 </div>`
 
 document.querySelector('#app').innerHTML = `

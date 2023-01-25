@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .8);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #f5f5f5;
+  transition: all .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
+  opacity: .7;
+}
+
 html, body, h1, h2, h3, h4, h5, span, p, div, a {
   font-family: 'LINESeed-Regular', sans-serif;
 }
@@ -20,7 +39,7 @@ body {
 }
 
 a {
-  transition: all .3s;
+  transition: all .3s !important;
 }
 
 #about .aboutContainer {
