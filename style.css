@@ -1,6 +1,12 @@
+@import url('https://cdn.katsuragi.cyou/fonts/TH/LINEseed-Regular');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body, h1, h2, h3, h4, h5, span, p, div, a {
+  font-family: 'LINESeed-Regular', sans-serif;
+}
 
 body {
   background: #2e2f2f;
