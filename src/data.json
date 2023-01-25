@@ -75,7 +75,19 @@
     ]
   },
   "commission": {
-
+    "musicComposing": [
+      {
+        "name":"Let me make a song for you.",
+        "desp": "This is a commission for composing a song like 'a theme song' or other type of song",
+        "price": "Start @ 1000 THB",
+        "example": [
+          {
+            "name": "katsu.json - a luv.ly day",
+            "link": "https://youtu.be/QjwCHzxqfmE"
+          }
+        ]
+      }
+    ]
   },
   "contact": {
 

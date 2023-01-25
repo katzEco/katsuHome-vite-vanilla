@@ -1,6 +1,6 @@
 import './style.css'
 import data from './src/data.json'
-import {eduProfile, skillEach, eventEach} from './src/js/eachingFunction'
+import {eduProfile, skillEach, eventEach, commissionEach} from './src/js/eachingFunction'
 
 let home = `<div class="w-[100%] h-screen flex flex-col justify-center text-center items-center" id="home">
   <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
@@ -126,9 +126,37 @@ let about = `<div class="w-[100%] h-screen flex flex-col justify-center text-cen
   </div>
 </div>`
 
+let commission = `<div class="w-[100%] h-screen flex flex-col justify-center text-center items-center" id="commission">
+  <div class="commissionContainer w-[95%] h-screen align-bottom md:w-[95%] lg:w-[90%]">
+    <h1 class="text-3xl my-[5rem] text-[#f5f5f5]">
+      <u>
+        Commission
+      </u>
+    </h1>
+    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
+      <h2 class="text-2xl">
+        <b>
+          Music Production
+        </b>
+      </h2>
+      <hr class="w-[15%] border-solid border-gray-400 mb-[.5rem]">
+      <br>
+      <div class="flex flex-col w-full h-auto">
+        ${commissionEach(data.commission.musicComposing)}
+      </div>
+    </div>
+
+    <nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
+      <a href="#about" class="block w-full duration-300 hover:opacity-80">&lt; About</a>
+      <a href="#contact" class="block w-full duration-300 hover:opacity-80">Contact &gt;</a>
+    </nav>
+  </div>
+</div>`
+
 document.querySelector('#app').innerHTML = `
   <main>
     ${home}
     ${about}
+    ${commission}
   </main>
 `
