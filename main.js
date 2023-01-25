@@ -102,6 +102,20 @@ let about = `<div class="w-[100%] h-screen flex flex-col justify-center text-cen
             ${eventEach(data.about.events)}
           </div>
         </div>
+
+        <br>
+
+        <div class="certificates">
+          <h3 class="pt-[1rem] text-xl">
+            <b>
+              Certificates
+            </b>
+          </h3>
+          <hr class="border-solid border-gray-400 w-[5%]">
+          <div class="w-full h-auto flex flex-col flex-wrap mt-[1rem] justify-center md:flex-row">
+            ${eventEach(data.about.certificates)}
+          </div>
+        </div>
       </div>
     </div>
   </div>      
