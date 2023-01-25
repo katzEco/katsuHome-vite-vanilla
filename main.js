@@ -153,10 +153,21 @@ let commission = `<div class="w-[100%] h-screen flex flex-col justify-center tex
   </div>
 </div>`
 
+let contact = `<div class="w-[100%] h-screen flex flex-col justify-center text-center items-center" id="contact">
+  <div class="commissionContainer w-[95%] h-screen align-bottom md:w-[95%] lg:w-[90%]">
+    <h1 class="text-3xl my-[5rem] text-[#f5f5f5]">
+      <u>
+        Contact
+      </u>
+    </h1>
+  </div>
+</div>`
+
 document.querySelector('#app').innerHTML = `
   <main>
     ${home}
     ${about}
     ${commission}
+    ${contact}
   </main>
 `
