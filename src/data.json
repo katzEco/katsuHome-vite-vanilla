@@ -1,5 +1,83 @@
 {
   "image": "https://avatars.githubusercontent.com/u/25049577?v=4",
   "name": "Suphakit Pinyoworapot",
-  "sName": "Suphakit P."
+  "sName": "Suphakit P.",
+  "quote": "Just a Computer Engineering Student w/ some music composing skill. :3",
+  "about": {
+    "bYear": 2002,
+    "eduProfile": [
+      {
+        "grade": "Kintergarden - Grade 6",
+        "class": "",
+        "school": "Darasamutr Sriracha School",
+        "duration": "2005 - 2014"
+      },
+      {
+        "grade": "Grade 7-9",
+        "class": "MEP",
+        "school": "Sriracha School",
+        "duration": "2014 - 2018"
+      },
+      {
+        "grade": "Grade 10",
+        "class": "Sci-Math",
+        "school": "Piboonbumpen Demonstration School",
+        "duration": "2018 - 2019"
+      },
+      {
+        "grade": "Grade 11-12",
+        "class": "Sci-Math",
+        "school": "Darasamutr Sriracha School",
+        "duration": "2019 - April 2021"
+      },
+      {
+        "grade": "Bachelor's degree",
+        "class": "Computer Engineering",
+        "school": "University of Phayao",
+        "duration": "May 2021 - Present"
+      }
+    ],
+    "skills": {
+      "programming": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "Tailwind.css",
+        "PHP",
+        "Javascript",
+        "TypeScript",
+        "React.js",
+        "Vue.js",
+        "Nuxt.js",
+        "Express.js"
+      ],
+      "musicComposing": [
+        "Producing",
+        "Vocaling",
+        "Mastering",
+        "Composing",
+        "Arranging"
+      ]
+    },
+    "events": [
+      {
+        "name": "TESA Top Gun Rally #16",
+        "desp": "5-10 Sept. 2022 @ Chitralada Technology Institute",
+        "image": "https://ksrc.suphakit.net/1662866532553/000001.jpg"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "TESA Top Gun Rally #16",
+        "desp": "Participate in TESA Top Gun Rally #16",
+        "image": ""
+      }
+    ]
+  },
+  "commission": {
+
+  },
+  "contact": {
+
+  }
 }
