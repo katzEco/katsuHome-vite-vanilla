@@ -3,6 +3,13 @@ import './style.css'
 import data from './src/data.json'
 import {eduProfile, skillEach, eventEach, commissionEach, contactEach} from './src/js/eachingFunction'
 
+let nav = `<nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
+  <a href="#home" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">Home</a>
+  <a href="#about" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">About</a>
+  <a href="#commission" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">Commission</a>
+  <a href="#contact" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">Contact</a>
+</nav>`
+
 let home = `<div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
   <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
     <img src="${data.image}" alt="Profile image" class="w-[250px] h-[250px] mt-[-8rem] mb-[1rem] ml-auto mr-auto p-[.5rem] rounded-[50%] border-[5px] border-solid border-[#ff6f61]" />
@@ -32,10 +39,7 @@ let about = `<div class="w-screen h-screen flex flex-col justify-center text-cen
       </u>
     </h1>
 
-    <nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
-      <a href="#home" class="block w-full duration-300 hover:opacity-80">&lt; Home</a>
-      <a href="#commission" class="block w-full duration-300 hover:opacity-80">Commission &gt;</a>
-    </nav>
+    ${nav}
 
     <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
       <div class="basic text-[18px]">
@@ -140,11 +144,7 @@ let commission = `<div class="w-screen h-screen flex flex-col justify-center tex
       </u>
     </h1>
 
-    <nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
-      <a href="#about" class="block w-full duration-300 hover:opacity-80">&lt; About</a>
-      <a href="#home" class="block w-full duration-300 hover:opacity-80">^ Home ^</a>
-      <a href="#contact" class="block w-full duration-300 hover:opacity-80">Contact &gt;</a>
-    </nav>
+    ${nav}
 
     <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
       <h2 class="text-2xl">
@@ -169,10 +169,7 @@ let contact = `<div class="w-screen h-screen flex flex-col justify-center text-c
       </u>
     </h1>
 
-    <nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
-      <a href="#commission" class="block w-full duration-300 hover:opacity-80">&lt; Commission</a>
-      <a href="#home" class="block w-full duration-300 hover:opacity-80">Home &gt;</a>
-    </nav>
+    ${nav}
 
     <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
       If you want to ask me somethings or just wanna make a friend, using these link below this :D
