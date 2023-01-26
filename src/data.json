@@ -120,5 +120,11 @@
       "bgColor": "#1c9aee",
       "tColor": "whitesmoke"
     }
-  ]
+  ],
+  "copyright": {
+    "?": "🤍",
+    "year": 2023,
+    "holder": "Suphakit P.",
+    "holderLink": "https://suphakit.net/"
+  }
 }

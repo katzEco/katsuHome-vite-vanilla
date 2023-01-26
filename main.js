@@ -3,7 +3,7 @@ import './style.css'
 import data from './src/data.json'
 import {eduProfile, skillEach, eventEach, commissionEach, contactEach} from './src/js/eachingFunction'
 
-let home = `<div class="w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
+let home = `<div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
   <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
     <img src="${data.image}" alt="Profile image" class="w-[250px] h-[250px] mt-[-8rem] mb-[1rem] ml-auto mr-auto p-[.5rem] rounded-[50%] border-[5px] border-solid border-[#ff6f61]" />
     <h1 class="shortName text-3xl my-[1rem]">
@@ -12,12 +12,16 @@ let home = `<div class="w-screen h-screen flex flex-col justify-center text-cent
     <p class="quote text-gray-500 px-[1rem] my-[1.5rem]">
       ${data.quote}
     </p>
-    <div class="buttonContainer w-full mt-[1rem] flex flex-row justify-center">
+    <div class="buttonContainer w-full mt-[1rem] flex flex-row justify-center text-center mx-auto">
       <a href="#about" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-bl-[1rem] hover:opacity-80">About</a>
       <a href="#commission" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] hover:opacity-80">Commission</a>
       <a href="#contact" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-br-[1rem] hover:opacity-80">Contact</a>
     </div>
   </div>
+  <footer class="w-full p-[1rem] absolute bottom-0 bg-black/[.6] text-[whitesmoke]">
+    Made w/ ${data.copyright['?']} by ${data.copyright.holder}<br />
+    &copy; ${data.copyright.year} <a href="${data.copyright.holderLink}" class="hover:underline">${data.copyright.holder}</a> All Right Reserved.
+  </footer>
 </div>`
 
 let about = `<div class="w-screen h-screen flex flex-col justify-center text-center items-center" id="about">
@@ -167,8 +171,7 @@ let contact = `<div class="w-screen h-screen flex flex-col justify-center text-c
 
     <nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
       <a href="#commission" class="block w-full duration-300 hover:opacity-80">&lt; Commission</a>
-      <a href="#home" class="block w-full duration-300 hover:opacity-80">^ Home ^</a>
-      <a href="#contact" class="block w-full duration-300 hover:opacity-80">nothing &gt;</a>
+      <a href="#home" class="block w-full duration-300 hover:opacity-80">Home &gt;</a>
     </nav>
 
     <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
