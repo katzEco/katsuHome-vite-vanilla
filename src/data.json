@@ -91,8 +91,20 @@
   },
   "contact": [
     {
-      "name": "",
-      "link": ""
+      "name": "E-Mail",
+      "link": "mailto:me@suphakit.net"
+    },
+    {
+      "name": "Discord",
+      "link": "https://did.000198.xyz/@298415109359796234"
+    },
+    {
+      "name": "Facebook",
+      "link": "https://fb.com/detzz.in.th"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/georgeKdeterk"
     }
   ]
 }
