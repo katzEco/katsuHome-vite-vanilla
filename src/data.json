@@ -92,19 +92,33 @@
   "contact": [
     {
       "name": "E-Mail",
-      "link": "mailto:me@suphakit.net"
+      "link": "mailto:me@suphakit.net",
+      "bgColor": "#ff6f61",
+      "tColor": "whitesmoke"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/dethMastery",
+      "bgColor": "#2e2f2f",
+      "tColor": "whitesmoke"
     },
     {
       "name": "Discord",
-      "link": "https://did.000198.xyz/@298415109359796234"
+      "link": "https://did.000198.xyz/@298415109359796234",
+      "bgColor": "#7289da",
+      "tColor": "whitesmoke"
     },
     {
       "name": "Facebook",
-      "link": "https://fb.com/detzz.in.th"
+      "link": "https://fb.com/detzz.in.th",
+      "bgColor": "#2f89fe",
+      "tColor": "whitesmoke"
     },
     {
       "name": "Twitter",
-      "link": "https://twitter.com/georgeKdeterk"
+      "link": "https://twitter.com/georgeKdeterk",
+      "bgColor": "#1c9aee",
+      "tColor": "whitesmoke"
     }
   ]
 }

@@ -1,6 +1,7 @@
+import './src/css/tailwind.css'
 import './style.css'
 import data from './src/data.json'
-import {eduProfile, skillEach, eventEach, commissionEach} from './src/js/eachingFunction'
+import {eduProfile, skillEach, eventEach, commissionEach, contactEach} from './src/js/eachingFunction'
 
 let home = `<div class="w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
   <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
@@ -171,7 +172,11 @@ let contact = `<div class="w-screen h-screen flex flex-col justify-center text-c
     </nav>
 
     <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
-
+      If you want to ask me somethings or just wanna make a friend, using these link below this :D
+    
+      <div class="w-full grid grid-cols-2 mt-[1rem] justify-center gap-[.5rem]">
+        ${contactEach(data.contact)}
+      </div>
     </div>
   </div>
 </div>`

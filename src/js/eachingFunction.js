@@ -1,3 +1,4 @@
+import '../css/tailwind.css'
 import '../../style.css'
 
 export function eduProfile(inp) {
@@ -116,6 +117,24 @@ export function commissionEach(inp) {
       temp = carding
     }
   })
+
+  return temp;
+}
+
+export function contactEach(inp) {
+  let temp = ''
+  
+  inp.forEach (iinp => {
+    let button = `<a href="${iinp.link}" target="_blank" class="block w-full text-center rounded-[1rem] p-[1rem] text-[${iinp.tColor}]" style="background-color: ${iinp.bgColor};">${iinp.name}</a>`
+
+    if (temp != '') {
+      temp = temp + button
+    } else {
+      temp = button
+    }
+  });
+
+  console.log(temp);
 
   return temp;
 }

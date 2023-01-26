@@ -1,9 +1,5 @@
 @import url('https://cdn.katsuragi.cyou/fonts/TH/LINEseed-Regular');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 ::-webkit-scrollbar {
   width: 5px;
 }
