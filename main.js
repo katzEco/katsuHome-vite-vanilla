@@ -3,11 +3,11 @@ import './style.css'
 import data from './src/data.json'
 import {eduProfile, skillEach, eventEach, commissionEach, contactEach} from './src/js/eachingFunction'
 
-let nav = `<nav class="w-full text-[whitesmoke] text-xl flex flex-row mb-[2rem]">
-  <a href="#home" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">Home</a>
-  <a href="#about" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">About</a>
-  <a href="#commission" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">Commission</a>
-  <a href="#contact" class="block w-full py-[1rem] bg-[#0f4c81] duration-300 hover:opacity-80">Contact</a>
+let nav = `<nav class="flex w-full text-[whitesmoke] text-[12px] flex-row mb-[2rem] md:flex-wrap">
+  <a href="#home" class="block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80">Home</a>
+  <a href="#about" class="block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80">About</a>
+  <a href="#commission" class="block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80">Commission</a>
+  <a href="#contact" class="block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80">Contact</a>
 </nav>`
 
 let home = `<div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
@@ -31,7 +31,7 @@ let home = `<div class="relative w-screen h-screen flex flex-col justify-center 
   </footer>
 </div>`
 
-let about = `<div class="w-screen h-screen flex flex-col justify-center text-center items-center" id="about">
+let about = `<div class="w-screen min-h-screen flex flex-col justify-center text-center items-center md:h-screen" id="about">
   <div class="aboutContainer w-[95%] h-screen align-bottom md:w-[95%] lg:w-[90%]">
     <h1 class="text-3xl my-[5rem] text-[#f5f5f5]">
       <u>
@@ -41,7 +41,7 @@ let about = `<div class="w-screen h-screen flex flex-col justify-center text-cen
 
     ${nav}
 
-    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
+    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[5rem]">
       <div class="basic text-[18px]">
         <h2 class="text-2xl">
           <b>
@@ -136,7 +136,7 @@ let about = `<div class="w-screen h-screen flex flex-col justify-center text-cen
   </div>
 </div>`
 
-let commission = `<div class="w-screen h-screen flex flex-col justify-center text-center items-center" id="commission">
+let commission = `<div class="w-screen min-h-screen flex flex-col justify-center text-center items-center md:h-screen" id="commission">
   <div class="commissionContainer w-[95%] h-screen align-bottom md:w-[95%] lg:w-[90%]">
     <h1 class="text-3xl my-[5rem] text-[#f5f5f5]">
       <u>
@@ -146,7 +146,7 @@ let commission = `<div class="w-screen h-screen flex flex-col justify-center tex
 
     ${nav}
 
-    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
+    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[5rem]">
       <h2 class="text-2xl">
         <b>
           Music Production
@@ -161,7 +161,7 @@ let commission = `<div class="w-screen h-screen flex flex-col justify-center tex
   </div>
 </div>`
 
-let contact = `<div class="w-screen h-screen flex flex-col justify-center text-center items-center" id="contact">
+let contact = `<div class="w-screen min-h-screen flex flex-col justify-center text-center items-center md:h-screen" id="contact">
   <div class="commissionContainer w-[95%] h-screen align-bottom md:w-[95%] lg:w-[90%]">
     <h1 class="text-3xl my-[5rem] text-[#f5f5f5]">
       <u>
@@ -171,7 +171,7 @@ let contact = `<div class="w-screen h-screen flex flex-col justify-center text-c
 
     ${nav}
 
-    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[2rem]">
+    <div class="content w-full md:w-[90%] lg:w-[80%] h-auto bg-[whitesmoke] text-[#2e2f2f] text-left rounded-[1rem] mx-auto p-[2rem] mb-[5rem]">
       If you want to ask me somethings or just wanna make a friend, using these link below this :D
     
       <div class="w-full grid grid-cols-2 mt-[1rem] justify-center gap-[.5rem]">
@@ -182,7 +182,7 @@ let contact = `<div class="w-screen h-screen flex flex-col justify-center text-c
 </div>`
 
 document.querySelector('#app').innerHTML = `
-  <main class="w-[400vw] flex flex-row">
+  <main class="w-[100vw] flex flex-col md:flex-row md:w-[400vw]">
     ${home}
     ${about}
     ${commission}
