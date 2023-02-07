@@ -7,7 +7,7 @@ export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
 
   let essential = {
-    nav: `<nav class="flex w-full text-[whitesmoke] text-[12px] flex-row mb-[2rem] md:flex-wrap text-center">
+    nav: `<nav class="flex w-full text-[whitesmoke] text-[10px] flex-row md:flex-wrap text-center">
       <a href="/home" class="${navClass}">Home</a>
       <a href="/about" class="${navClass}">About</a>
       <a href="/commission" class="${navClass}">Commission</a>
@@ -54,7 +54,14 @@ export function page(inp) {
   } else if (inp == 'donation') {
     rtn = ''
   } else {
-    rtn = ''
+    rtn = `<main class="${flexMain}">
+      <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center text-[whitesmoke]">
+        <h1 class="w-full text-5xl mb-[2rem]">
+          404: Page not Found
+        </h1>
+        <a href="/" class="text-[18px] underline hover:no-underline hover:opacity-60">&lt; Back to Homepage</a>
+      </div>
+    </main>`
   }
 
   return rtn
