@@ -7,7 +7,7 @@ export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
 
   let essential = {
-    nav: `<nav class="flex w-full text-[whitesmoke] text-[10px] flex-row md:flex-wrap text-center">
+    nav: `<nav class="flex w-full text-[whitesmoke] text-[10px] text-center flex-row md:flex-wrap md:text-[18px]">
       <a href="/home" class="${navClass}">Home</a>
       <a href="/about" class="${navClass}">About</a>
       <a href="/commission" class="${navClass}">Commission</a>
