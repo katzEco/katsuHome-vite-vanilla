@@ -7,11 +7,11 @@ export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
 
   let essential = {
-    nav: `<nav class="flex w-full text-[whitesmoke] text-[12px] flex-row mb-[2rem] md:flex-wrap">
-      <a href="#home" class="${navClass}">Home</a>
-      <a href="#about" class="${navClass}">About</a>
-      <a href="#commission" class="${navClass}">Commission</a>
-      <a href="#contact" class="${navClass}">Contact</a>
+    nav: `<nav class="flex w-full text-[whitesmoke] text-[12px] flex-row mb-[2rem] md:flex-wrap text-center">
+      <a href="/home" class="${navClass}">Home</a>
+      <a href="/about" class="${navClass}">About</a>
+      <a href="/commission" class="${navClass}">Commission</a>
+      <a href="/contact" class="${navClass}">Contact</a>
     </nav>`,
     footer: `<footer class="w-full p-[1rem] absolute bottom-0 bg-black/[.6] text-[whitesmoke] text-center">
       Made w/ ${data.copyright['?']} by ${data.copyright.holder}<br />
@@ -36,9 +36,7 @@ export function page(inp) {
           ${data.quote}
         </p>
         <div class="buttonContainer w-full mt-[1rem] flex flex-row justify-center text-center mx-auto">
-          <a href="#about" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-bl-[1rem] hover:opacity-80">About</a>
-          <a href="#commission" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] hover:opacity-80">Commission</a>
-          <a href="#contact" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-br-[1rem] hover:opacity-80">Contact</a>
+          <a href="/contact" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-br-[1rem] hover:opacity-80">Contact Me?</a>
         </div>
       </div>
     </div>`
