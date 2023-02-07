@@ -6,9 +6,7 @@ function pageFrame(inp) {
   let xConst = `
     ${frame().nav}
 
-    <main class="w-[100vw] flex flex-col md:flex-row md:w-[400vw]">
-      ${page(inp)}
-    </main>
+    ${page(inp)}
     
     ${frame().footer}
   `
@@ -16,6 +14,26 @@ function pageFrame(inp) {
   return xConst
 }
 
+let bURL = window.location.href.split('/')
+bURL.pop()
+bURL = bURL.join('/')
+let pLocation = window.location.href.replace(bURL + '/', '')
+console.log(pLocation);
+
+let pageLocation = ''
+
+if (pLocation == 'home' || pLocation == '') {
+  pageLocation = 'home'
+} else if (pLocation == 'commission') {
+  pageLocation = 'commission'
+} else if (pLocation == 'contact') {
+  pageLocation = 'contact'
+} else if (pLocation == 'donation') {
+  pageLocation = 'donation'
+} else {
+  pageLocation = ''
+}
+
 document.querySelector('#app').innerHTML = `
-  ${pageFrame('home')}
+  ${pageFrame(pageLocation)}
 `

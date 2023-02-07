@@ -22,24 +22,29 @@ export function frame() {
   return essential
 }
 
+let flexMain = `w-[100%] flex flex-col md:flex-row`
+let blockMain = `w-[100%]`
+
 export function page(inp) {
   let rtn = ''
 
   if (inp == 'home') {
-    rtn = `<div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
-      <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
-        <img src="${data.image}" alt="Profile image" class="w-[250px] h-[250px] mt-[-8rem] mb-[1rem] ml-auto mr-auto p-[.5rem] rounded-[50%] border-[5px] border-solid border-[#ff6f61]" />
-        <h1 class="shortName text-3xl my-[1rem]">
-          <b>${data.sName}</b>
-        </h1>
-        <p class="quote text-gray-500 px-[1rem] my-[1.5rem]">
-          ${data.quote}
-        </p>
-        <div class="buttonContainer w-full mt-[1rem] flex flex-row justify-center text-center mx-auto">
-          <a href="/contact" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-br-[1rem] hover:opacity-80">Contact Me?</a>
+    rtn = `<main class="${flexMain}">
+      <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
+        <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
+          <img src="${data.image}" alt="Profile image" class="w-[250px] h-[250px] mt-[-8rem] mb-[1rem] ml-auto mr-auto p-[.5rem] rounded-[50%] border-[5px] border-solid border-[#ff6f61]" />
+          <h1 class="shortName text-3xl my-[1rem]">
+            <b>${data.sName}</b>
+          </h1>
+          <p class="quote text-gray-500 px-[1rem] my-[1.5rem]">
+            ${data.quote}
+          </p>
+          <div class="buttonContainer w-full mt-[1rem] flex flex-row justify-center text-center mx-auto">
+            <a href="/donation" class="w-full bg-[#ff6f61] text-[#f5f5f5] py-[1rem] rounded-br-[1rem] rounded-bl-[1rem] hover:opacity-80">Donate Me?</a>
+          </div>
         </div>
       </div>
-    </div>`
+    </main>`
   } else if (inp == 'about') {
     rtn = ''
   } else if (inp == 'commission') {
