@@ -46,13 +46,13 @@ export function page(inp) {
       </div>
     </main>`
   } else if (inp == 'about') {
-    rtn = ''
+    rtn = ``
   } else if (inp == 'commission') {
-    rtn = ''
+    rtn = ``
   } else if (inp == 'contact') {
-    rtn = ''
+    rtn = ``
   } else if (inp == 'donation') {
-    rtn = ''
+    rtn = ``
   } else {
     rtn = `<main class="${flexMain}">
       <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center text-[whitesmoke]">
