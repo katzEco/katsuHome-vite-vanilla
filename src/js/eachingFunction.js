@@ -136,3 +136,22 @@ export function contactEach(inp) {
 
   return temp;
 }
+
+export function donationEach(inp) {
+  let temp = ''
+
+  inp.forEach(iinp => {
+    let donation = `<p class="mb-[1rem]">
+      <span class="text-[18px]">${iinp.name} : ${iinp.address}</span><br />
+      <span class="opacity-60 text-[15px]">${iinp.revName}</span>
+    </p>`
+
+    if (temp != '') {
+      temp = temp + donation
+    } else {
+      temp = donation
+    }
+  });
+
+  return temp
+}

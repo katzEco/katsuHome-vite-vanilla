@@ -1,7 +1,7 @@
 import '../css/tailwind.css'
 import '../../style.css'
 import data from '../data.json'
-import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
+import { eduProfile, skillEach, eventEach, commissionEach, contactEach, donationEach } from '../js/eachingFunction'
 import { flexMain, blockMain, heading, subHeading, anotherHeading, containerClass, headerBox, contentBox} from './class.config'
 
 export function frame() {
@@ -131,14 +131,24 @@ export function page(inp) {
       <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center">
         <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] p-[2rem] justify-center text-center items-center">
           <h1 class="${heading}">
-            Contact
+            contact()
           </h1>
           ${contactEach(data.contact)}
         </div>
       </div>
     </main>`
   } else if (inp == 'donation') {
-    rtn = ``
+    rtn = `<main class="${flexMain}">
+      <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center">
+        <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] p-[2rem] justify-center text-center items-center">
+          <h1 class="${heading}">
+            donation()
+          </h1>
+          <hr class="border-[#2e2f2f] w-[60%] mx-auto mb-[1rem]">
+          ${donationEach(data.donation)}
+        </div>
+      </div>
+    </main>`
   } else {
     rtn = `<main class="${flexMain}">
       <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center text-[whitesmoke]">
