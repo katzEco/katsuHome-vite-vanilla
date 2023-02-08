@@ -94,6 +94,14 @@ export function page(inp) {
               ${eventEach(data.about.events)}
             </div>
           </div>
+          <div class="certs mb-[2rem]">
+            <h2 class="${subHeading}">
+              Certificates
+            </h2>
+            <div class="flex f-row flex-wrap justify-center">
+              ${eventEach(data.about.certificates)}
+            </div>
+          </div>
         </div>
       </div>
     </main>`
