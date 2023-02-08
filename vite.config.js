@@ -6,10 +6,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve('./index.html'),
-        about: resolve('./src/page/about/index.html'),
-        commission: resolve('./src/page/commission/index.html'),
-        home: resolve('./src/page/home/index.html'),
-        donation: resolve('./src/page/donation/index.html'),
+        about: resolve('./about/index.html'),
+        commission: resolve('./commission/index.html'),
+        home: resolve('./home/index.html'),
+        donation: resolve('./donation/index.html'),
       }
     }
   }
