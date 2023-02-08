@@ -2,7 +2,7 @@ import '../css/tailwind.css'
 import '../../style.css'
 import data from '../data.json'
 import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
-import { flexMain, blockMain, heading, subHeading, anotherHeading, containerClass, headerBox } from './class.config'
+import { flexMain, blockMain, heading, subHeading, anotherHeading, containerClass, headerBox, contentBox} from './class.config'
 
 export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
@@ -26,7 +26,7 @@ export function frame() {
 export function page(inp) {
   let rtn = ''
 
-  if (inp == 'home') {
+  if (inp == 'home' || inp == '') {
     rtn = `<main class="${flexMain}">
       <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
         <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
@@ -54,7 +54,7 @@ export function page(inp) {
             just a information about me :D
           </h3>
         </div>
-        <div class="content p-[2rem] bg-[whitesmoke] w-full rounded-[1rem]">
+        <div class="${contentBox}">
           <div class="bInfo mb-[2rem]">
             <h2 class="${subHeading}">
               Basic Information
@@ -115,6 +115,14 @@ export function page(inp) {
           <h3 class="text-[20px]">
             love my work? why don't hire me for some of your work :D
           </h3>
+        </div>
+        <div class="${contentBox}">
+          <div class="musicBox">
+            <h2 class="${subHeading}">
+              Music Commission
+            </h2>
+            ${commissionEach(data.commission.musicComposing)}
+          </div>
         </div>
       </div>
     </main>`

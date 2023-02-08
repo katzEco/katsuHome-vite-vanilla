@@ -7,3 +7,4 @@ export let anotherHeading = `text-xl mb-[1rem] underline`
 
 export let containerClass = `container w-[80%] mx-auto`
 export let headerBox = `header my-[5rem] w-full justify-center text-center text-[whitesmoke]`
+export let contentBox = `content p-[2rem] bg-[whitesmoke] w-full rounded-[1rem]`
