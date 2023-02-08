@@ -1,6 +1,6 @@
-import './src/css/tailwind.css'
-import './style.css'
-import { frame, page } from './src/js/compo'
+import '../src/css/tailwind.css'
+import '../style.css'
+import { frame, page } from '../src/js/compo'
 
 function pageFrame(inp) {
   let xConst = `
