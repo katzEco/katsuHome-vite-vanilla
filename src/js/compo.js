@@ -2,7 +2,7 @@ import '../css/tailwind.css'
 import '../../style.css'
 import data from '../data.json'
 import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
-import { flexMain, blockMain, subHeading, anotherHeading } from './class.config'
+import { flexMain, blockMain, subHeading, anotherHeading, containerClass } from './class.config'
 
 export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
@@ -45,7 +45,7 @@ export function page(inp) {
     </main>`
   } else if (inp == 'about') {
     rtn = `<main class="${blockMain}">
-      <div class="container w-[80%] mx-auto">
+      <div class="${containerClass}">
         <div class="header my-[5rem] w-full justify-center text-center text-[whitesmoke]">
           <h1 class="text-3xl mb-[1rem]">
             about()
