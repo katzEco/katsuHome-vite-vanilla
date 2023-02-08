@@ -10,6 +10,7 @@ export default defineConfig({
         commission: resolve(__dirname, 'commission/index.html'),
         home: resolve(__dirname, 'home/index.html'),
         donation: resolve(__dirname, 'donation/index.html'),
+        contact: resolve(__dirname, 'contact/index.html'),
       }
     }
   }
