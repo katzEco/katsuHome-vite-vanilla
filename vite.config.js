@@ -5,11 +5,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve('./index.html'),
-        about: resolve('./about/index.html'),
-        commission: resolve('./commission/index.html'),
-        home: resolve('./home/index.html'),
-        donation: resolve('./donation/index.html'),
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about/index.html'),
+        commission: resolve(__dirname, 'commission/index.html'),
+        home: resolve(__dirname, 'home/index.html'),
+        donation: resolve(__dirname, 'donation/index.html'),
       }
     }
   }
