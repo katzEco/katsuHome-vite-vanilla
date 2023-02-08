@@ -86,6 +86,9 @@ export function page(inp) {
             </h3>
             ${skillEach(data.about.skills.musicComposing)}
           </div>
+          <div class="joinedEvent">
+            
+          </div>
         </div>
       </div>
     </main>`
