@@ -127,7 +127,16 @@ export function page(inp) {
       </div>
     </main>`
   } else if (inp == 'contact') {
-    rtn = ``
+    rtn = `<main class="${flexMain}">
+      <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center">
+        <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] p-[2rem] justify-center text-center items-center">
+          <h1 class="${heading}">
+            Contact
+          </h1>
+          ${contactEach(data.contact)}
+        </div>
+      </div>
+    </main>`
   } else if (inp == 'donation') {
     rtn = ``
   } else {

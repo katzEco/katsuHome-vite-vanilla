@@ -125,7 +125,7 @@ export function contactEach(inp) {
   let temp = ''
   
   inp.forEach (iinp => {
-    let button = `<a href="${iinp.link}" target="_blank" class="block w-full text-center rounded-[1rem] p-[1rem] text-[${iinp.tColor}]" style="background-color: ${iinp.bgColor};">${iinp.name}</a>`
+    let button = `<a href="${iinp.link}" target="_blank" class="block w-full text-center rounded-[1rem] mb-[1rem] p-[1rem] text-[${iinp.tColor}] hover:opacity-80" style="background-color: ${iinp.bgColor};">${iinp.name}</a>`
 
     if (temp != '') {
       temp = temp + button
@@ -133,8 +133,6 @@ export function contactEach(inp) {
       temp = button
     }
   });
-
-  console.log(temp);
 
   return temp;
 }
