@@ -2,7 +2,7 @@ import '../css/tailwind.css'
 import '../../style.css'
 import data from '../data.json'
 import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
-import { flexMain, blockMain, subHeading } from './class.config'
+import { flexMain, blockMain, subHeading, anotherHeading } from './class.config'
 
 export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
@@ -71,6 +71,20 @@ export function page(inp) {
               Educational Profile
             </h2>
             ${eduProfile(data.about.eduProfile.reverse())}
+          </div>
+          <div class="skill mb-[2rem]">
+            <h2 class="${subHeading}">
+              Skills
+            </h2>
+            <h3 class="${anotherHeading}">
+              Programming
+            </h3>
+            ${skillEach(data.about.skills.programming)}
+            <br><br>
+            <h3 class="${anotherHeading}">
+              Music Composing
+            </h3>
+            ${skillEach(data.about.skills.musicComposing)}
           </div>
         </div>
       </div>
