@@ -1,7 +1,7 @@
 import '../css/tailwind.css'
 import '../../style.css'
 import data from '../data.json'
-// import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
+import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
 
 export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
@@ -46,7 +46,37 @@ export function page(inp) {
       </div>
     </main>`
   } else if (inp == 'about') {
-    rtn = ``
+    rtn = `<main class="${blockMain}">
+      <div class="container w-[80%] mx-auto">
+        <div class="header my-[5rem] w-full justify-center text-center text-[whitesmoke]">
+          <h1 class="text-3xl mb-[1rem]">
+            about()
+          </h1>
+          <h3 class="text-[20px]">
+            just a information about me :D
+          </h3>
+        </div>
+        <div class="content p-[2rem] bg-[whitesmoke] w-full rounded-[1rem]">
+          <div class="bInfo mb-[2rem]">
+            <h2 class="text-2xl mb-[1rem] underline">
+              Basic Information
+            </h2>
+            <p class="pb-[.5rem] ml-[1rem] text-[15px]">
+              Name : ${data.name}
+            </p>
+            <p class="pb-[.5rem] ml-[1rem] text-[15px]">
+              Age : ${new Date().getFullYear() - parseInt(data.about.bYear)}
+            </p>
+          </div>
+          <div class="eduProfile mb-[2rem]">
+            <h2 class="text-2xl mb-[1rem] underline">
+              Educational Profile
+            </h2>
+            ${eduProfile(data.about.eduProfile.reverse())}
+          </div>
+        </div>
+      </div>
+    </main>`
   } else if (inp == 'commission') {
     rtn = ``
   } else if (inp == 'contact') {
