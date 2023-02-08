@@ -20,20 +20,6 @@ bURL = bURL.join('/')
 let pLocation = window.location.href.replace(bURL + '/', '')
 console.log(pLocation);
 
-let pageLocation = ''
-
-if (pLocation == 'home' || pLocation == '') {
-  pageLocation = 'home'
-} else if (pLocation == 'commission') {
-  pageLocation = 'commission'
-} else if (pLocation == 'contact') {
-  pageLocation = 'contact'
-} else if (pLocation == 'donation') {
-  pageLocation = 'donation'
-} else {
-  pageLocation = ''
-}
-
 document.querySelector('#app').innerHTML = `
-  ${pageFrame(pageLocation)}
+  ${pageFrame(pLocation)}
 `
