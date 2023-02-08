@@ -8,7 +8,7 @@
       ${s.desp}
     </p>
   </div>
-</div>`;e!=""?e=e+a:e=a}),e}let u="w-[100%] flex flex-col md:flex-row",S="w-[100%] mb-[5rem]",l="text-2xl mb-[1rem] underline",f="text-xl mb-[1rem] underline";function h(){let t="block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80";return{nav:`<nav class="flex w-full text-[whitesmoke] text-[10px] text-center flex-row md:flex-wrap md:text-[18px]">
+</div>`;e!=""?e=e+a:e=a}),e}let u="w-[100%] flex flex-col md:flex-row",S="w-[100%] mb-[5rem]",l="text-2xl mb-[1rem] underline",f="text-xl mb-[1rem] underline",P="container w-[80%] mx-auto";function h(){let t="block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80";return{nav:`<nav class="flex w-full text-[whitesmoke] text-[10px] text-center flex-row md:flex-wrap md:text-[18px]">
       <a href="/home" class="${t}">Home</a>
       <a href="/about" class="${t}">About</a>
       <a href="/commission" class="${t}">Commission</a>
@@ -16,7 +16,7 @@
     </nav>`,footer:`<footer class="w-full p-[1rem] fixed bottom-0 bg-black/[.6] text-[whitesmoke] text-center">
       Made w/ ${r.copyright["?"]} by ${r.copyright.holder}<br />
       &copy; ${r.copyright.year} <a href="${r.copyright.holderLink}" class="hover:underline">${r.copyright.holder}</a> All Right Reserved.
-    </footer>`}}function P(t){let e="";return t=="home"?e=`<main class="${u}">
+    </footer>`}}function E(t){let e="";return t=="home"?e=`<main class="${u}">
       <div class="relative w-screen h-screen flex flex-col justify-center text-center items-center" id="home">
         <div class="card w-[22rem] bg-[#f5f5f5] rounded-[1rem] justify-center text-center items-center">
           <img src="${r.image}" alt="Profile image" class="w-[250px] h-[250px] mt-[-8rem] mb-[1rem] ml-auto mr-auto p-[.5rem] rounded-[50%] border-[5px] border-solid border-[#ff6f61]" />
@@ -32,7 +32,7 @@
         </div>
       </div>
     </main>`:t=="about"?e=`<main class="${S}">
-      <div class="container w-[80%] mx-auto">
+      <div class="${P}">
         <div class="header my-[5rem] w-full justify-center text-center text-[whitesmoke]">
           <h1 class="text-3xl mb-[1rem]">
             about()
@@ -98,12 +98,12 @@
         </h1>
         <a href="/" class="text-[18px] underline hover:no-underline hover:opacity-60">&lt; Back to Homepage</a>
       </div>
-    </main>`,e}function E(t){return`
+    </main>`,e}function j(t){return`
     ${h().nav}
 
-    ${P(t)}
+    ${E(t)}
     
     ${h().footer}
   `}let n=window.location.href.split("/");n.pop();n=n.join("/");let p=window.location.href.replace(n+"/","");console.log(p);document.querySelector("#app").innerHTML=`
-  ${E(p)}
+  ${j(p)}
 `;
