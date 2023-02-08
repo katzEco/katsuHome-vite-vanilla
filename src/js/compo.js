@@ -2,7 +2,7 @@ import '../css/tailwind.css'
 import '../../style.css'
 import data from '../data.json'
 import { eduProfile, skillEach, eventEach, commissionEach, contactEach } from '../js/eachingFunction'
-import { flexMain, blockMain, subHeading, anotherHeading, containerClass } from './class.config'
+import { flexMain, blockMain, heading, subHeading, anotherHeading, containerClass, headerBox } from './class.config'
 
 export function frame() {
   let navClass = `block w-full basis-1/2 py-[1rem] bg-[#0f4c81] md:basis-1/4 duration-300 hover:opacity-80`
@@ -46,8 +46,8 @@ export function page(inp) {
   } else if (inp == 'about') {
     rtn = `<main class="${blockMain}">
       <div class="${containerClass}">
-        <div class="header my-[5rem] w-full justify-center text-center text-[whitesmoke]">
-          <h1 class="text-3xl mb-[1rem]">
+        <div class="${headerBox}">
+          <h1 class="${heading}">
             about()
           </h1>
           <h3 class="text-[20px]">
@@ -106,7 +106,18 @@ export function page(inp) {
       </div>
     </main>`
   } else if (inp == 'commission') {
-    rtn = ``
+    rtn = `<main class="${blockMain}">
+      <div class="${containerClass}">
+        <div class="${headerBox}">
+          <h1 class="${heading}">
+            commission()
+          </h1>
+          <h3 class="text-[20px]">
+            love my work? why don't hire me for some of your work :D
+          </h3>
+        </div>
+      </div>
+    </main>`
   } else if (inp == 'contact') {
     rtn = ``
   } else if (inp == 'donation') {
