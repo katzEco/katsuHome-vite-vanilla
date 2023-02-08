@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 
-module.exports = {
+export default {
   build: {
     rollupOptions: {
       input: {
