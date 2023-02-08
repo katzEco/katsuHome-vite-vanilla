@@ -86,8 +86,13 @@ export function page(inp) {
             </h3>
             ${skillEach(data.about.skills.musicComposing)}
           </div>
-          <div class="joinedEvent">
-            
+          <div class="joinedEvent mb-[2rem]">
+            <h2 class="${subHeading}">
+              Joined Events
+            </h2>
+            <div class="flex f-row flex-wrap justify-center">
+              ${eventEach(data.about.events)}
+            </div>
           </div>
         </div>
       </div>
