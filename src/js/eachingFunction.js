@@ -12,9 +12,9 @@ export function eduProfile(inp) {
     }
 
     if (temp != '') {
-      temp = temp + `<li class="mt-[.5rem]">${log}</li>`
+      temp = temp + `<li class="mb-[.5rem]">${log}</li>`
     } else {
-      temp = `<li class="mt-[.5rem]">${log}</li>`
+      temp = `<li class="mb-[.5rem]">${log}</li>`
     }
   });
 
