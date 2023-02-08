@@ -121,6 +121,23 @@
       "tColor": "whitesmoke"
     }
   ],
+  "donation": [
+   {
+    "name": "Promptpay",
+    "address": "1209401046979",
+    "revName": "Suphakit Pinyoworapot"
+   },
+   {
+    "name": "Kasikorn Bank",
+    "address": "066-8-69930-8",
+    "revName": "Suphakit Pinyoworapot"
+   },
+   {
+    "name": "True Wallet",
+    "address": "0944264826",
+    "revName": "Suphakit Pinyoworapot"
+   }
+  ],
   "copyright": {
     "?": "🤍",
     "year": 2023,
