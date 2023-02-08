@@ -17,7 +17,7 @@ function pageFrame(inp) {
 let bURL = window.location.href.split('/')
 bURL.pop()
 bURL = bURL.join('/')
-let pLocation = window.location.href.replace(bURL + '/', '')
+let pLocation = 'about'
 console.log(pLocation);
 
 document.querySelector('#app').innerHTML = `
