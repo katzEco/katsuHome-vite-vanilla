@@ -14,7 +14,7 @@ export function frame() {
       <a href="/commission" class="${navClass}">Commission</a>
       <a href="/contact" class="${navClass}">Contact</a>
     </nav>`,
-    footer: `<footer class="w-full p-[1rem] absolute bottom-0 bg-black/[.6] text-[whitesmoke] text-center">
+    footer: `<footer class="w-full p-[1rem] fixed bottom-0 bg-black/[.6] text-[whitesmoke] text-center">
       Made w/ ${data.copyright['?']} by ${data.copyright.holder}<br />
       &copy; ${data.copyright.year} <a href="${data.copyright.holderLink}" class="hover:underline">${data.copyright.holder}</a> All Right Reserved.
     </footer>`
